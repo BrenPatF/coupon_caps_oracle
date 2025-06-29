@@ -1,7 +1,7 @@
 # Coupons, Caps and Functions in Oracle
 <img src="img/mountains.png"><br />
 
-This project has the code for blog article [Coupons, Caps, and Functions](https://brenpatf.github.io/2025/06/29/coupons--caps--and-functions.html).
+This project has the code for blog article [Coupons, Caps, and Functions](https://brenpatf.github.io/2025/06/29/coupons_caps_functions.html).
 
 # In this README...
 [&darr; Background](#background)<br />
@@ -444,7 +444,7 @@ Total time taken: 13831 seconds
 [&darr; Unit Test PowerShell Script](#unit-test-powershell-script)<br />
 [&darr; Unit Test Results](#unit-test-results)<br />
 
-Unit testing is fully automated, using a driving PowerShell script. See the associated blog article for more details, [Coupons, Caps and Functions - Blog](https://brenpatf.github.io/2025/06/28/coupons,-caps-and-functions.html).
+Unit testing is fully automated, using a driving PowerShell script. See the associated blog article for more details, [Coupons, Caps and Functions - Blog](https://brenpatf.github.io/2025/06/29/coupons_caps_functions.html).
 
 #### [Schema: app; Folder: unit_test; Script: Test-Format-Coupon_Caps.ps1]
 
@@ -560,7 +560,7 @@ There are five subfolders below the trapit root folder:
 
 ## See Also
 [&uarr; In this README...](#in-this-readme)<br />
-- [Coupons, Caps and Functions - Blog](https://brenpatf.github.io/2025/06/28/coupons,-caps-and-functions.html)
+- [Coupons, Caps and Functions - Blog](https://brenpatf.github.io/2025/06/29/coupons_caps_functions.html)
 - [Solving a logical problem using analytical functions](https://asktom.oracle.com/ords/-asktom.search?tag=solving-a-logical-problem-using-analytical-functions)
 - [The Math Function Unit Testing Design Pattern](https://brenpatf.github.io/2023/06/05/the-math-function-unit-testing-design-pattern.html)
 - [Oracle Instant Client Downloads for Microsoft Windows (x64) 64-bit](https://www.oracle.com/ie/database/technologies/instant-client/winx64-64-downloads.html)
