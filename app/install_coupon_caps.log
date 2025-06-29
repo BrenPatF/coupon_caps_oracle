@@ -1,0 +1,121 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          29-JUN-2025 13:50:44 Version 23.4.0.24.05
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+Create coupon_data
+
+Table created.
+
+
+5 rows created.
+
+
+COUPON          VALUE
+---------- ----------
+A                 100
+B                  40
+C                 120
+D                  10
+E                 200
+
+Create cap_data
+
+Table created.
+
+
+2 rows created.
+
+
+CAP_NAME    CAP_LIMIT
+---------- ----------
+Cap 1             150
+Cap 2              70
+
+
+Table created.
+
+
+8 rows created.
+
+Create coupon_cap_mapping
+
+COUPON     CAP_NAME   CAP_SEQUENCE
+---------- ---------- ------------
+A          Cap 1                 1
+A          Cap 2                 2
+B          Cap 2                 1
+C          Cap 2                 1
+C          Cap 1                 2
+D          Cap 1                 1
+E          Cap 1                 1
+E          Cap 2                 2
+
+8 rows selected.
+
+
+Type dropped.
+
+
+Type created.
+
+
+Type created.
+
+
+Function created.
+
+No errors.
+coupon_caps_plf_v: Pipelined function
+
+View created.
+
+coupon_caps_mod_v: Model clause
+
+View created.
+
+coupon_caps_rsf_v: Recursive subquery factors
+
+View created.
+
+coupon_caps_rsf_bug_v: Recursive subquery factors, with bug
+
+View created.
+
+coupon_caps_plf_agg_v: Pipelined function
+
+View created.
+
+coupon_caps_mod_agg_v: Model clause
+
+View created.
+
+coupon_caps_rsf_agg_v: Recursive subquery factors
+
+View created.
+
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+PL/SQL procedure successfully completed.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 29-JUN-2025 13:50:47
+

@@ -1,0 +1,1 @@
+pwsh .\Format-JSON-Coupon_Caps.ps1  > .\Format-JSON-Coupon_Caps.out 2> .\Format-JSON-Coupon_Caps.err

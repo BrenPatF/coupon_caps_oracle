@@ -1,0 +1,1 @@
+pwsh -file .\Test-Format-Coupon_Caps.ps1  > .\Test-Format-Coupon_Caps.out 2> .\Test-Format-Coupon_Caps.err

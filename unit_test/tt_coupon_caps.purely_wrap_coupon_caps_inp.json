@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "title": "",
+    "delimiter": "|",
+    "inp": {
+      "Coupon": [
+        "Name",
+        "Value"
+      ],
+      "Cap": [
+        "Name",
+        "Limit"
+      ],
+      "Coupon Cap": [
+        "Coupon",
+        "Cap",
+        "Sequence"
+      ]
+    },
+    "out": {
+      "Coupon Usage": [
+        "Coupon",
+        "Cap",
+        "Usage"
+      ]
+    }
+  },
+  "scenarios": {
+    "One coupon, one cap": {
+      "active_yn": "Y",
+      "category_set": "Coupon-Cap Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100"
+        ],
+        "Cap": [
+          "Cap 1|150"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100"
+        ]
+      }
+    },
+    "One coupon, multiple caps": {
+      "active_yn": "Y",
+      "category_set": "Coupon-Cap Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0"
+        ]
+      }
+    },
+    "Multiple coupons, one cap": {
+      "active_yn": "Y",
+      "category_set": "Coupon-Cap Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "Multiple coupons, multiple caps": {
+      "active_yn": "Y",
+      "category_set": "Coupon-Cap Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|20",
+          "C|Cap 2|30",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "Caps unshared": {
+      "active_yn": "Y",
+      "category_set": "Cap Sharing",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "B|Cap 2|1",
+          "C|Cap 3|1"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "B|Cap 2|40",
+          "C|Cap 3|20"
+        ]
+      }
+    },
+    "Caps shared using same sequences": {
+      "active_yn": "Y",
+      "category_set": "Cap Sharing",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "A|Cap 3|3",
+          "B|Cap 1|1",
+          "B|Cap 2|2",
+          "B|Cap 3|3",
+          "C|Cap 1|1",
+          "C|Cap 2|2",
+          "C|Cap 3|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "A|Cap 3|0",
+          "B|Cap 1|40",
+          "B|Cap 2|0",
+          "B|Cap 3|0",
+          "C|Cap 1|10",
+          "C|Cap 2|70",
+          "C|Cap 3|20"
+        ]
+      }
+    },
+    "Caps shared using varying sequences": {
+      "active_yn": "Y",
+      "category_set": "Cap Sharing",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "A|Cap 3|3",
+          "B|Cap 1|2",
+          "B|Cap 2|1",
+          "B|Cap 3|3",
+          "C|Cap 1|3",
+          "C|Cap 2|1",
+          "C|Cap 3|2"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "A|Cap 3|0",
+          "B|Cap 2|40",
+          "B|Cap 1|0",
+          "B|Cap 3|0",
+          "C|Cap 2|30",
+          "C|Cap 3|20",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "Some caps unshared, and some shared": {
+      "active_yn": "Y",
+      "category_set": "Cap Sharing",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|20",
+          "C|Cap 2|30",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "Coupon unused": {
+      "active_yn": "Y",
+      "category_set": "Coupon Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|100",
+          "Cap 2|70"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 1|1"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 1|0"
+        ]
+      }
+    },
+    "Coupon partly used": {
+      "active_yn": "Y",
+      "category_set": "Coupon Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|20",
+          "C|Cap 2|30",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "Coupon fully used": {
+      "active_yn": "Y",
+      "category_set": "Coupon Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|120"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|120",
+          "C|Cap 2|0",
+          "C|Cap 1|0"
+        ]
+      }
+    },
+    "Cap unused": {
+      "active_yn": "Y",
+      "category_set": "Cap Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|50"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 1|1",
+          "C|Cap 2|2",
+          "C|Cap 3|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 1|50",
+          "C|Cap 2|0",
+          "C|Cap 3|0"
+        ]
+      }
+    },
+    "Cap partly used": {
+      "active_yn": "Y",
+      "category_set": "Cap Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|90"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|20",
+          "C|Cap 2|30",
+          "C|Cap 1|40"
+        ]
+      }
+    },
+    "Cap fully used": {
+      "active_yn": "Y",
+      "category_set": "Cap Usage",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|150",
+          "Cap 2|70",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|20",
+          "C|Cap 2|30",
+          "C|Cap 1|50"
+        ]
+      }
+    },
+    "One cap used per coupon": {
+      "active_yn": "Y",
+      "category_set": "Coupon Usage Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|100",
+          "Cap 2|70",
+          "Cap 3|120"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "C|Cap 3|120",
+          "C|Cap 2|0",
+          "C|Cap 1|0"
+        ]
+      }
+    },
+    "Multiple caps used per coupon": {
+      "active_yn": "Y",
+      "category_set": "Coupon Usage Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|110",
+          "B|60"
+        ],
+        "Cap": [
+          "Cap 1|90",
+          "Cap 2|40",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 1|1",
+          "B|Cap 2|2",
+          "B|Cap 3|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|90",
+          "A|Cap 2|20",
+          "B|Cap 1|0",
+          "B|Cap 2|20",
+          "B|Cap 3|20"
+        ]
+      }
+    },
+    "One coupon used per cap": {
+      "active_yn": "Y",
+      "category_set": "Cap Usage Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|100",
+          "Cap 2|40",
+          "Cap 3|20"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 2|1",
+          "B|Cap 3|2",
+          "C|Cap 3|1",
+          "C|Cap 2|2",
+          "C|Cap 1|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 2|40",
+          "B|Cap 3|0",
+          "C|Cap 3|20",
+          "C|Cap 2|0",
+          "C|Cap 1|0"
+        ]
+      }
+    },
+    "Multiple coupons used per cap": {
+      "active_yn": "Y",
+      "category_set": "Cap Usage Multiplicity",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|40",
+          "C|120"
+        ],
+        "Cap": [
+          "Cap 1|120",
+          "Cap 2|70"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "A|Cap 2|2",
+          "B|Cap 1|1",
+          "B|Cap 2|2",
+          "C|Cap 1|1",
+          "C|Cap 2|2"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|100",
+          "A|Cap 2|0",
+          "B|Cap 1|20",
+          "B|Cap 2|20",
+          "C|Cap 1|0",
+          "C|Cap 2|50"
+        ]
+      }
+    },
+    "Caps left RSF bug": {
+      "active_yn": "Y",
+      "category_set": "Regression",
+      "inp": {
+        "Coupon": [
+          "A|100",
+          "B|100",
+          "C|200"
+        ],
+        "Cap": [
+          "Cap 1|50",
+          "Cap 2|50",
+          "Cap 3|100"
+        ],
+        "Coupon Cap": [
+          "A|Cap 1|1",
+          "B|Cap 2|1",
+          "C|Cap 1|1",
+          "C|Cap 2|2",
+          "C|Cap 3|3"
+        ]
+      },
+      "out": {
+        "Coupon Usage": [
+          "A|Cap 1|50",
+          "B|Cap 2|50",
+          "C|Cap 1|0",
+          "C|Cap 2|0",
+          "C|Cap 3|100"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+pwsh -file .\Install-Coupon_Caps.ps1  > .\Install-Coupon_Caps.out 2> .\Install-Coupon_Caps.err

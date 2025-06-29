@@ -1,0 +1,49 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          29-JUN-2025 13:50:48 Version 23.4.0.24.05
+
+Objects in schema app created within last minute
+
+OBJECT_TYPE             OBJECT_NAME                    STATUS
+----------------------- ------------------------------ -------
+FUNCTION                CAPS                           VALID
+INDEX                   CAP_PK                         VALID
+INDEX                   CCM_PK                         VALID
+INDEX                   COU_PK                         VALID
+PACKAGE                 COUPON_CAPS                    VALID
+PACKAGE                 TT_COUPON_CAPS                 VALID
+PACKAGE BODY            COUPON_CAPS                    VALID
+PACKAGE BODY            TT_COUPON_CAPS                 VALID
+SYNONYM                 CHR_INT_ARR                    VALID
+SYNONYM                 CHR_INT_REC                    VALID
+SYNONYM                 L1_CHR_ARR                     VALID
+SYNONYM                 L1_NUM_ARR                     VALID
+SYNONYM                 L2_CHR_ARR                     VALID
+SYNONYM                 L3_CHR_ARR                     VALID
+SYNONYM                 L4_CHR_ARR                     VALID
+SYNONYM                 LOG_LINES                      VALID
+SYNONYM                 TIMER_SET                      VALID
+SYNONYM                 TRAPIT                         VALID
+SYNONYM                 TRAPIT_RUN                     VALID
+SYNONYM                 UTILS                          VALID
+TABLE                   CAP_DATA                       VALID
+TABLE                   COUPON_CAP_MAPPING             VALID
+TABLE                   COUPON_DATA                    VALID
+TYPE                    CAPS_OBJ                       VALID
+TYPE                    CAPS_TAB                       VALID
+VIEW                    COUPON_CAPS_MOD_AGG_V          VALID
+VIEW                    COUPON_CAPS_MOD_V              VALID
+VIEW                    COUPON_CAPS_PLF_AGG_V          VALID
+VIEW                    COUPON_CAPS_PLF_V              VALID
+VIEW                    COUPON_CAPS_RSF_AGG_V          VALID
+VIEW                    COUPON_CAPS_RSF_BUG_V          VALID
+VIEW                    COUPON_CAPS_RSF_V              VALID
+
+32 rows selected.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 29-JUN-2025 13:50:48
+

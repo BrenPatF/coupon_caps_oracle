@@ -1,0 +1,55 @@
+
+SQL*Plus: Release 23.0.0.0.0 - Production on Sun Jun 29 13:52:04 2025
+Version 23.4.0.24.05
+
+Copyright (c) 1982, 2024, Oracle.  All rights reserved.
+
+Last Successful login time: Sun Jun 29 2025 13:52:04 +02:00
+
+Connected to:
+Oracle Database 23ai Free Release 23.0.0.0.0 - Production
+Version 23.4.0.24.05
+
+SQL> SQL>   2    3    4    5    6    7    8    9   10   11  !
+c:\input\tt_coupon_caps.coupon_caps_mod_out.json
+c:\input\tt_coupon_caps.coupon_caps_rsf_out.json
+c:\input\tt_coupon_caps.coupon_caps_rsf_bug_out.json
+c:\input\tt_coupon_caps.coupon_caps_plf_out.json
+!
+
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle Database 23ai Free Release 23.0.0.0.0 - Production
+Version 23.4.0.24.05
+ 
+File:          tt_coupon_caps.coupon_caps_mod_out.json
+Title:         Coupon Caps - Model Clause
+Inp Groups:    3
+Out Groups:    2
+Tests:         19
+Fails:         0
+Folder:        coupon-caps---model-clause
+ 
+File:          tt_coupon_caps.coupon_caps_rsf_out.json
+Title:         Coupon Caps - Recursive Query
+Inp Groups:    3
+Out Groups:    2
+Tests:         19
+Fails:         0
+Folder:        coupon-caps---recursive-query
+ 
+File:          tt_coupon_caps.coupon_caps_rsf_bug_out.json
+Title:         Coupon Caps - Recursive Query, with bug
+Inp Groups:    3
+Out Groups:    2
+Tests:         19
+Fails:         1
+Folder:        coupon-caps---recursive-query,-with-bug
+ 
+File:          tt_coupon_caps.coupon_caps_plf_out.json
+Title:         Coupon Caps - Pipelined Function
+Inp Groups:    3
+Out Groups:    2
+Tests:         19
+Fails:         0
+Folder:        coupon-caps---pipelined-function

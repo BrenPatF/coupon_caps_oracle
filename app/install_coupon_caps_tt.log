@@ -1,0 +1,21 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          29-JUN-2025 13:50:47 Version 23.4.0.24.05
+
+Create package tt_coupon_caps
+
+Package created.
+
+
+Package body created.
+
+Add the tt_units record, reading in JSON file from INPUT_DIR
+
+PL/SQL procedure successfully completed.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 29-JUN-2025 13:50:47
+

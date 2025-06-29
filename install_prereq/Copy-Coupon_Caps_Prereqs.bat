@@ -1,0 +1,1 @@
+pwsh -file .\Copy-Coupon_Caps_Prereqs.ps1  > .\Copy-Coupon_Caps_Prereqs.out 2> .\Copy-Coupon_Caps_Prereqs.err

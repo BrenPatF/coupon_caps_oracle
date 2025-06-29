@@ -1,0 +1,1100 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          25-JUN-2025 23:52:25 Version 23.4.0.24.05
+
+SQL> VAR TIMER_SET NUMBER
+SQL> DELETE log_lines;
+
+304 rows deleted.
+
+SQL> EXEC :TIMER_SET := Timer_Set.Construct('Run_All');
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 10000 12 22 2 N
+Create data - 10000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 10000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 20000 12 22 2 N
+Create data - 20000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 20000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 30000 12 22 2 N
+Create data - 30000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 30000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 40000 12 22 2 N
+Create data - 40000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 40000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 50000 12 22 2 N
+Create data - 50000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 50000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 22 2 Y
+Create data - 60000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'Y' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 2 22 2 N
+Create data - 60000 coupons, 2 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 2;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 4 22 2 N
+Create data - 60000 coupons, 4 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 4;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 6 22 2 N
+Create data - 60000 coupons, 6 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 6;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 8 22 2 N
+Create data - 60000 coupons, 8 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 8;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 10 22 2 N
+Create data - 60000 coupons, 10 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 10;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 12 2 N
+Create data - 60000 coupons, 12 caps per coupon, 12 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 12;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 14 2 N
+Create data - 60000 coupons, 12 caps per coupon, 14 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 14;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 16 2 N
+Create data - 60000 coupons, 12 caps per coupon, 16 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 16;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 18 2 N
+Create data - 60000 coupons, 12 caps per coupon, 18 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 18;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 60000 12 20 2 N
+Create data - 60000 coupons, 12 caps per coupon, 20 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 60000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 20;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 2;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 1000 12 22 3 N
+Create data - 1000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 1000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 2000 12 22 3 N
+Create data - 2000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 2000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 3000 12 22 3 N
+Create data - 3000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 3000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 4000 12 22 3 N
+Create data - 4000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 4000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 5000 12 22 3 N
+Create data - 5000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 5000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 22 3 Y
+Create data - 6000 coupons, 12 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'Y' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 2 22 3 N
+Create data - 6000 coupons, 2 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 2;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 4 22 3 N
+Create data - 6000 coupons, 4 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 4;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 6 22 3 N
+Create data - 6000 coupons, 6 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 6;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 8 22 3 N
+Create data - 6000 coupons, 8 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 8;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 10 22 3 N
+Create data - 6000 coupons, 10 caps per coupon, 22 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 10;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 22;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 12 3 N
+Create data - 6000 coupons, 12 caps per coupon, 12 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 12;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 14 3 N
+Create data - 6000 coupons, 12 caps per coupon, 14 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 14;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 16 3 N
+Create data - 6000 coupons, 12 caps per coupon, 16 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 16;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 18 3 N
+Create data - 6000 coupons, 12 caps per coupon, 18 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 18;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> @run_dp 6000 12 20 3 N
+Create data - 6000 coupons, 12 caps per coupon, 20 caps
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+old   2:   l_n_cou               PLS_INTEGER := &N_COU;
+new   2:   l_n_cou               PLS_INTEGER := 6000;
+old   3:   l_n_cap_per_cou       PLS_INTEGER := &N_CAP_PER_COU;
+new   3:   l_n_cap_per_cou       PLS_INTEGER := 12;
+old   4:   l_n_cap               PLS_INTEGER := &N_CAP;
+new   4:   l_n_cap               PLS_INTEGER := 20;
+old   5:   l_n_views             PLS_INTEGER := &N_VIEWS;
+new   5:   l_n_views             PLS_INTEGER := 3;
+old   6:   l_get_xplan           BOOLEAN := '&XPLAN_YN' = 'Y';
+new   6:   l_get_xplan           BOOLEAN := 'N' = 'Y';
+
+PL/SQL procedure successfully completed.
+
+SQL> EXEC Utils.L(Timer_Set.Format_Results(:TIMER_SET));
+
+PL/SQL procedure successfully completed.
+
+SQL> SET HEAD OFF
+SQL> SELECT line FROM log_lines ORDER BY id;
+
+create_Test_Data 10000 - 12 - 22
+Result for coupon_caps_plf_agg_v 10000 - 12 - 22: 10007|120000|1996423
+Result for coupon_caps_mod_agg_v 10000 - 12 - 22: 10007|120000|1996423
+create_Test_Data 20000 - 12 - 22
+Result for coupon_caps_plf_agg_v 20000 - 12 - 22: 20006|240000|4006149
+Result for coupon_caps_mod_agg_v 20000 - 12 - 22: 20006|240000|4006149
+create_Test_Data 30000 - 12 - 22
+Result for coupon_caps_plf_agg_v 30000 - 12 - 22: 30007|360000|5996471
+Result for coupon_caps_mod_agg_v 30000 - 12 - 22: 30007|360000|5996471
+create_Test_Data 40000 - 12 - 22
+Result for coupon_caps_plf_agg_v 40000 - 12 - 22: 40010|480000|8026657
+Result for coupon_caps_mod_agg_v 40000 - 12 - 22: 40010|480000|8026657
+create_Test_Data 50000 - 12 - 22
+Result for coupon_caps_plf_agg_v 50000 - 12 - 22: 49961|600000|9987535
+Result for coupon_caps_mod_agg_v 50000 - 12 - 22: 49961|600000|9987535
+create_Test_Data 60000 - 12 - 22
+Result for coupon_caps_plf_agg_v 60000 - 12 - 22: 36024|720000|7207188
+SQL_ID  362sgx9f39wb1, child number 0
+-------------------------------------
+SELECT /*+ gather_plan_statistics coupon_caps_plf_agg_v702926 */
+Utils.Join_Values(L1_chr_arr(n_pos_usages,n_rows,sum_usage), '|') FROM
+coupon_caps_plf_agg_v WHERE 1=1 ORDER BY 1
+
+Plan hash value: 1289100141
+
+-----------------------------------------------------------------------------------------------------------------------
+| Id  | Operation                           | Name                  | Starts | E-Rows | A-Rows |   A-Time   | Buffers |
+-----------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT                    |                       |      1 |        |      1 |00:00:03.17 |    2536 |
+|   1 |  VIEW                               | COUPON_CAPS_PLF_AGG_V |      1 |      1 |      1 |00:00:03.17 |    2536 |
+|   2 |   SORT AGGREGATE                    |                       |      1 |      1 |      1 |00:00:03.17 |    2536 |
+|   3 |    COLLECTION ITERATOR PICKLER FETCH| CAPS                  |      1 |   8168 |    720K|00:00:05.91 |    2536 |
+-----------------------------------------------------------------------------------------------------------------------
+
+Result for XPLAN-coupon_caps_plf_agg_v 60000 - 12 - 22: 36024|720000|7207188
+Result for coupon_caps_mod_agg_v 60000 - 12 - 22: 36024|720000|7207188
+SQL_ID  ck8awb0a6hcqy, child number 0
+-------------------------------------
+SELECT /*+ gather_plan_statistics coupon_caps_mod_agg_v266726 */
+Utils.Join_Values(L1_chr_arr(n_pos_usages,n_rows,sum_usage), '|') FROM
+coupon_caps_mod_agg_v WHERE 1=1 ORDER BY 1
+
+Plan hash value: 1708460470
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id  | Operation                   | Name                  | Starts | E-Rows | A-Rows |   A-Time   | Buffers | Reads  | Writes |  OMem |  1Mem | Used-Mem | Used-Tmp|
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT            |                       |      1 |        |      1 |00:00:20.09 |    2546 |  22048 |  22048 |       |       |          |         |
+|   1 |  VIEW                       | COUPON_CAPS_MOD_AGG_V |      1 |      1 |      1 |00:00:20.09 |    2546 |  22048 |  22048 |       |       |          |         |
+|   2 |   SORT AGGREGATE            |                       |      1 |      1 |      1 |00:00:20.09 |    2546 |  22048 |  22048 |       |       |          |         |
+|   3 |    VIEW                     | COUPON_CAPS_MOD_V     |      1 |    716K|    720K|00:00:20.19 |    2546 |  22048 |  22048 |       |       |          |         |
+|   4 |     SQL MODEL ORDERED FAST  |                       |      1 |    716K|    720K|00:00:20.01 |    2546 |  22048 |  22048 |   103M|  9043K|  101M (0)|         |
+|   5 |      WINDOW SORT            |                       |      1 |    716K|    720K|00:00:05.92 |    2546 |  22048 |  22048 |    40M|  2264K|   37M (1)|      38M|
+|   6 |       WINDOW SORT           |                       |      1 |    716K|    720K|00:00:04.39 |    2541 |  12786 |  12786 |    34M|  2096K|   37M (1)|      32M|
+|   7 |        VIEW                 |                       |      1 |    716K|    720K|00:00:01.71 |    2536 |   4961 |   4961 |       |       |          |         |
+|   8 |         WINDOW SORT         |                       |      1 |    716K|    720K|00:00:01.71 |    2536 |   4961 |   4961 |    43M|  2332K|   45M (1)|      39M|
+|*  9 |          HASH JOIN          |                       |      1 |    716K|    720K|00:00:00.15 |    2533 |      0 |      0 |  1797K|  1797K| 1448K (0)|         |
+|  10 |           TABLE ACCESS FULL | CAP_DATA              |      1 |     22 |     22 |00:00:00.01 |       7 |      0 |      0 |       |       |          |         |
+|* 11 |           HASH JOIN         |                       |      1 |    716K|    720K|00:00:00.10 |    2526 |      0 |      0 |  4656K|  2259K| 4746K (0)|         |
+|  12 |            TABLE ACCESS FULL| COUPON_DATA           |      1 |  60000 |  60000 |00:00:00.01 |     191 |      0 |      0 |       |       |          |         |
+|  13 |            TABLE ACCESS FULL| COUPON_CAP_MAPPING    |      1 |    720K|    720K|00:00:00.04 |    2335 |      0 |      0 |       |       |          |         |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Predicate Information (identified by operation id):
+---------------------------------------------------
+
+   9 - access("CCM"."CAP_NAME"="CAP"."CAP_NAME")
+  11 - access("COU"."COUPON"="CCM"."COUPON")
+
+Result for XPLAN-coupon_caps_mod_agg_v 60000 - 12 - 22: 36024|720000|7207188
+create_Test_Data 60000 - 2 - 22
+Result for coupon_caps_plf_agg_v 60000 - 2 - 22: 43469|120000|8678985
+Result for coupon_caps_mod_agg_v 60000 - 2 - 22: 43469|120000|8678985
+create_Test_Data 60000 - 4 - 22
+Result for coupon_caps_plf_agg_v 60000 - 4 - 22: 37305|240000|7462341
+Result for coupon_caps_mod_agg_v 60000 - 4 - 22: 37305|240000|7462341
+create_Test_Data 60000 - 6 - 22
+Result for coupon_caps_plf_agg_v 60000 - 6 - 22: 48176|360000|9612848
+Result for coupon_caps_mod_agg_v 60000 - 6 - 22: 48176|360000|9612848
+create_Test_Data 60000 - 8 - 22
+Result for coupon_caps_plf_agg_v 60000 - 8 - 22: 42606|480000|8522877
+Result for coupon_caps_mod_agg_v 60000 - 8 - 22: 42606|480000|8522877
+create_Test_Data 60000 - 10 - 22
+Result for coupon_caps_plf_agg_v 60000 - 10 - 22: 38369|600000|7683907
+Result for coupon_caps_mod_agg_v 60000 - 10 - 22: 38369|600000|7683907
+create_Test_Data 60000 - 12 - 12
+Result for coupon_caps_plf_agg_v 60000 - 12 - 12: 34581|720000|6889556
+Result for coupon_caps_mod_agg_v 60000 - 12 - 12: 34581|720000|6889556
+create_Test_Data 60000 - 12 - 14
+Result for coupon_caps_plf_agg_v 60000 - 12 - 14: 29419|720000|5876873
+Result for coupon_caps_mod_agg_v 60000 - 12 - 14: 29419|720000|5876873
+create_Test_Data 60000 - 12 - 16
+Result for coupon_caps_plf_agg_v 60000 - 12 - 16: 33510|720000|6721111
+Result for coupon_caps_mod_agg_v 60000 - 12 - 16: 33510|720000|6721111
+create_Test_Data 60000 - 12 - 18
+Result for coupon_caps_plf_agg_v 60000 - 12 - 18: 45847|720000|9176140
+Result for coupon_caps_mod_agg_v 60000 - 12 - 18: 45847|720000|9176140
+create_Test_Data 60000 - 12 - 20
+Result for coupon_caps_plf_agg_v 60000 - 12 - 20: 34909|720000|6973237
+Result for coupon_caps_mod_agg_v 60000 - 12 - 20: 34909|720000|6973237
+create_Test_Data 1000 - 12 - 22
+Result for coupon_caps_plf_agg_v 1000 - 12 - 22: 1001|12000|198574
+Result for coupon_caps_mod_agg_v 1000 - 12 - 22: 1001|12000|198574
+Result for coupon_caps_rsf_agg_v 1000 - 12 - 22: 1001|12000|198574
+create_Test_Data 2000 - 12 - 22
+Result for coupon_caps_plf_agg_v 2000 - 12 - 22: 2000|24000|397706
+Result for coupon_caps_mod_agg_v 2000 - 12 - 22: 2000|24000|397706
+Result for coupon_caps_rsf_agg_v 2000 - 12 - 22: 2000|24000|397706
+create_Test_Data 3000 - 12 - 22
+Result for coupon_caps_plf_agg_v 3000 - 12 - 22: 3000|36000|604832
+Result for coupon_caps_mod_agg_v 3000 - 12 - 22: 3000|36000|604832
+Result for coupon_caps_rsf_agg_v 3000 - 12 - 22: 3000|36000|604832
+create_Test_Data 4000 - 12 - 22
+Result for coupon_caps_plf_agg_v 4000 - 12 - 22: 4002|48000|798176
+Result for coupon_caps_mod_agg_v 4000 - 12 - 22: 4002|48000|798176
+Result for coupon_caps_rsf_agg_v 4000 - 12 - 22: 4002|48000|798176
+create_Test_Data 5000 - 12 - 22
+Result for coupon_caps_plf_agg_v 5000 - 12 - 22: 5001|60000|1000686
+Result for coupon_caps_mod_agg_v 5000 - 12 - 22: 5001|60000|1000686
+Result for coupon_caps_rsf_agg_v 5000 - 12 - 22: 5001|60000|1000686
+create_Test_Data 6000 - 12 - 22
+Result for coupon_caps_plf_agg_v 6000 - 12 - 22: 6002|72000|1197592
+Result for coupon_caps_mod_agg_v 6000 - 12 - 22: 6002|72000|1197592
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 22: 6002|72000|1197592
+SQL_ID  b5vtj0ht2ksqg, child number 0
+-------------------------------------
+SELECT /*+ gather_plan_statistics coupon_caps_rsf_agg_v945469 */
+Utils.Join_Values(L1_chr_arr(n_pos_usages,n_rows,sum_usage), '|') FROM
+coupon_caps_rsf_agg_v WHERE 1=1 ORDER BY 1
+
+Plan hash value: 1200264344
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id  | Operation                                   | Name                  | Starts | E-Rows | A-Rows |   A-Time   | Buffers |  OMem |  1Mem | Used-Mem |
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT                            |                       |      1 |        |      1 |00:18:09.87 |     363M|       |       |          |
+|   1 |  VIEW                                       | COUPON_CAPS_RSF_AGG_V |      1 |      1 |      1 |00:18:09.87 |     363M|       |       |          |
+|   2 |   SORT AGGREGATE                            |                       |      1 |      1 |      1 |00:18:09.87 |     363M|       |       |          |
+|*  3 |    VIEW                                     |                       |      1 |     61T|  72000 |00:47:52.28 |     363M|       |       |          |
+|   4 |     UNION ALL (RECURSIVE WITH) BREADTH FIRST|                       |      1 |        |    132K|00:21:18.67 |     363M|  2048 |  2048 |  299K (0)|
+|   5 |      TABLE ACCESS FULL                      | CAP_DATA              |      1 |     22 |     22 |00:00:00.01 |       7 |       |       |          |
+|   6 |      WINDOW SORT                            |                       |   6001 |     61T|    132K|00:03:58.71 |    1488K|  4096 |  4096 | 4096  (0)|
+|   7 |       MERGE JOIN OUTER                      |                       |   6001 |     61T|    132K|00:03:58.70 |    1488K|       |       |          |
+|   8 |        SORT JOIN                            |                       |   6001 |     61T|    132K|00:00:13.00 |     275 |  4096 |  4096 | 4096  (0)|
+|*  9 |         HASH JOIN                           |                       |   6001 |     61T|    132K|00:00:12.64 |     275 |  1506K|  1506K| 1720K (0)|
+|  10 |          BUFFER SORT (REUSE)                |                       |   6001 |        |     36M|00:00:03.52 |     274 |   337K|   337K|  299K (0)|
+|  11 |           VIEW                              |                       |      1 |   6000 |   6000 |00:00:00.03 |     274 |       |       |          |
+|  12 |            WINDOW SORT                      |                       |      1 |   6000 |   6000 |00:00:00.03 |     274 |   232K|   232K|  206K (0)|
+|* 13 |             HASH JOIN SEMI                  |                       |      1 |   6000 |   6000 |00:00:00.02 |     274 |  1695K|  1695K| 1649K (0)|
+|  14 |              TABLE ACCESS FULL              | COUPON_DATA           |      1 |   6000 |   6000 |00:00:00.01 |      23 |       |       |          |
+|  15 |              INDEX FAST FULL SCAN           | CCM_PK                |      1 |  72000 |  71983 |00:00:00.01 |     251 |       |       |          |
+|* 16 |          HASH JOIN                          |                       |   6001 |   1026G|    132K|00:00:01.05 |       1 |  1506K|  1506K| 1642K (0)|
+|  17 |           BUFFER SORT (REUSE)               |                       |   6001 |        |    132K|00:00:00.05 |       1 | 73728 | 73728 |          |
+|  18 |            INDEX FULL SCAN                  | CAP_PK                |      1 |     22 |     22 |00:00:00.01 |       1 |       |       |          |
+|  19 |           RECURSIVE WITH PUMP               |                       |   6001 |        |    132K|00:00:00.06 |       0 |       |       |          |
+|* 20 |        SORT JOIN                            |                       |    132K|  72000 |  72000 |00:03:44.79 |    1488K|  3313K|   798K| 2944K (0)|
+|  21 |         TABLE ACCESS FULL                   | COUPON_CAP_MAPPING    |   6000 |  72000 |    432M|00:01:16.62 |    1488K|       |       |          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Predicate Information (identified by operation id):
+---------------------------------------------------
+
+   3 - filter(("COUPON" IS NOT NULL AND "CAP_SEQUENCE" IS NOT NULL))
+   9 - access("COU"."COU_IND"="RSF"."COU_IND"+1)
+  13 - access("CCM"."COUPON"="COU"."COUPON")
+  16 - access("CAP"."CAP_NAME"="RSF"."CAP_NAME")
+  20 - access("CCM"."COUPON"="COU"."COUPON" AND "CCM"."CAP_NAME"="RSF"."CAP_NAME")
+       filter(("CCM"."CAP_NAME"="RSF"."CAP_NAME" AND "CCM"."COUPON"="COU"."COUPON"))
+
+Result for XPLAN-coupon_caps_rsf_agg_v 6000 - 12 - 22: 6002|72000|1197592
+create_Test_Data 6000 - 2 - 22
+Result for coupon_caps_plf_agg_v 6000 - 2 - 22: 5996|12000|1190107
+Result for coupon_caps_mod_agg_v 6000 - 2 - 22: 5996|12000|1190107
+Result for coupon_caps_rsf_agg_v 6000 - 2 - 22: 5996|12000|1190107
+create_Test_Data 6000 - 4 - 22
+Result for coupon_caps_plf_agg_v 6000 - 4 - 22: 6001|24000|1207173
+Result for coupon_caps_mod_agg_v 6000 - 4 - 22: 6001|24000|1207173
+Result for coupon_caps_rsf_agg_v 6000 - 4 - 22: 6001|24000|1207173
+create_Test_Data 6000 - 6 - 22
+Result for coupon_caps_plf_agg_v 6000 - 6 - 22: 6002|36000|1202547
+Result for coupon_caps_mod_agg_v 6000 - 6 - 22: 6002|36000|1202547
+Result for coupon_caps_rsf_agg_v 6000 - 6 - 22: 6002|36000|1202547
+create_Test_Data 6000 - 8 - 22
+Result for coupon_caps_plf_agg_v 6000 - 8 - 22: 6001|48000|1200146
+Result for coupon_caps_mod_agg_v 6000 - 8 - 22: 6001|48000|1200146
+Result for coupon_caps_rsf_agg_v 6000 - 8 - 22: 6001|48000|1200146
+create_Test_Data 6000 - 10 - 22
+Result for coupon_caps_plf_agg_v 6000 - 10 - 22: 6001|60000|1200991
+Result for coupon_caps_mod_agg_v 6000 - 10 - 22: 6001|60000|1200991
+Result for coupon_caps_rsf_agg_v 6000 - 10 - 22: 6001|60000|1200991
+create_Test_Data 6000 - 12 - 12
+Result for coupon_caps_plf_agg_v 6000 - 12 - 12: 6001|72000|1200395
+Result for coupon_caps_mod_agg_v 6000 - 12 - 12: 6001|72000|1200395
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 12: 6001|72000|1200395
+create_Test_Data 6000 - 12 - 14
+Result for coupon_caps_plf_agg_v 6000 - 12 - 14: 6001|72000|1200608
+Result for coupon_caps_mod_agg_v 6000 - 12 - 14: 6001|72000|1200608
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 14: 6001|72000|1200608
+create_Test_Data 6000 - 12 - 16
+Result for coupon_caps_plf_agg_v 6000 - 12 - 16: 6000|72000|1199759
+Result for coupon_caps_mod_agg_v 6000 - 12 - 16: 6000|72000|1199759
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 16: 6000|72000|1199759
+create_Test_Data 6000 - 12 - 18
+Result for coupon_caps_plf_agg_v 6000 - 12 - 18: 6002|72000|1201614
+Result for coupon_caps_mod_agg_v 6000 - 12 - 18: 6002|72000|1201614
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 18: 6002|72000|1201614
+create_Test_Data 6000 - 12 - 20
+Result for coupon_caps_plf_agg_v 6000 - 12 - 20: 6000|72000|1197447
+Result for coupon_caps_mod_agg_v 6000 - 12 - 20: 6000|72000|1197447
+Result for coupon_caps_rsf_agg_v 6000 - 12 - 20: 6000|72000|1197447
+Timer Set: Run_All, Constructed at 25 Jun 2025 23:52:25, written at 03:46:36
+============================================================================
+Timer                                           Elapsed         CPU       Calls       Ela/Call       CPU/Call
+-------------------------------------------  ----------  ----------  ----------  -------------  -------------
+create_Test_Data: 10000 - 12 - 22                 14.63       13.57           1       14.62998       13.57000
+coupon_caps_plf_agg_v 10000 - 12 - 22              0.26        0.22           1        0.25844        0.22000
+coupon_caps_mod_agg_v 10000 - 12 - 22              1.49        1.47           1        1.49099        1.47000
+create_Test_Data: 20000 - 12 - 22                 31.32       29.90           1       31.31578       29.90000
+coupon_caps_plf_agg_v 20000 - 12 - 22              1.10        1.03           1        1.09822        1.03000
+coupon_caps_mod_agg_v 20000 - 12 - 22              6.66        5.67           1        6.66179        5.67000
+create_Test_Data: 30000 - 12 - 22                 57.12       46.10           1       57.11703       46.10000
+coupon_caps_plf_agg_v 30000 - 12 - 22              2.36        1.65           1        2.36320        1.65000
+coupon_caps_mod_agg_v 30000 - 12 - 22             11.59        9.20           1       11.58667        9.20000
+create_Test_Data: 40000 - 12 - 22                 53.37       50.98           1       53.36559       50.98000
+coupon_caps_plf_agg_v 40000 - 12 - 22              2.06        1.99           1        2.05823        1.99000
+coupon_caps_mod_agg_v 40000 - 12 - 22             11.82       11.56           1       11.82044       11.56000
+create_Test_Data: 50000 - 12 - 22                 67.64       65.07           1       67.64260       65.07000
+coupon_caps_plf_agg_v 50000 - 12 - 22              2.56        2.52           1        2.56092        2.52000
+coupon_caps_mod_agg_v 50000 - 12 - 22             15.18       14.77           1       15.18109       14.77000
+create_Test_Data: 60000 - 12 - 22                 84.30       81.05           1       84.29782       81.05000
+coupon_caps_plf_agg_v 60000 - 12 - 22              3.08        3.01           1        3.08369        3.01000
+XPLAN-coupon_caps_plf_agg_v 60000 - 12 - 22        3.20        3.12           1        3.19984        3.12000
+coupon_caps_mod_agg_v 60000 - 12 - 22             18.80       17.92           1       18.80460       17.92000
+XPLAN-coupon_caps_mod_agg_v 60000 - 12 - 22       20.11       17.75           1       20.10995       17.75000
+create_Test_Data: 60000 - 2 - 22                  15.17       14.63           1       15.16719       14.63000
+coupon_caps_plf_agg_v 60000 - 2 - 22               0.56        0.55           1        0.56181        0.55000
+coupon_caps_mod_agg_v 60000 - 2 - 22               3.00        2.79           1        3.00073        2.79000
+create_Test_Data: 60000 - 4 - 22                  25.43       24.28           1       25.43422       24.28000
+coupon_caps_plf_agg_v 60000 - 4 - 22               1.04        0.97           1        1.03573        0.97000
+coupon_caps_mod_agg_v 60000 - 4 - 22               5.99        5.82           1        5.99236        5.82000
+create_Test_Data: 60000 - 6 - 22                  38.22       36.48           1       38.21783       36.48000
+coupon_caps_plf_agg_v 60000 - 6 - 22               1.55        1.55           1        1.55376        1.55000
+coupon_caps_mod_agg_v 60000 - 6 - 22               9.15        8.86           1        9.15210        8.86000
+create_Test_Data: 60000 - 8 - 22                  53.68       49.22           1       53.67855       49.22000
+coupon_caps_plf_agg_v 60000 - 8 - 22               2.07        2.02           1        2.07206        2.02000
+coupon_caps_mod_agg_v 60000 - 8 - 22              12.31       11.72           1       12.30992       11.72000
+create_Test_Data: 60000 - 10 - 22                 64.99       63.19           1       64.98853       63.19000
+coupon_caps_plf_agg_v 60000 - 10 - 22              2.54        2.45           1        2.53784        2.45000
+coupon_caps_mod_agg_v 60000 - 10 - 22             14.94       14.62           1       14.94225       14.62000
+create_Test_Data: 60000 - 12 - 12                157.29      145.90           1      157.28852      145.90000
+coupon_caps_plf_agg_v 60000 - 12 - 12              3.04        2.95           1        3.04069        2.95000
+coupon_caps_mod_agg_v 60000 - 12 - 12             18.13       17.47           1       18.12577       17.47000
+create_Test_Data: 60000 - 12 - 14                108.47      103.91           1      108.46776      103.91000
+coupon_caps_plf_agg_v 60000 - 12 - 14              3.08        3.00           1        3.08386        3.00000
+coupon_caps_mod_agg_v 60000 - 12 - 14             18.27       17.63           1       18.26858       17.63000
+create_Test_Data: 60000 - 12 - 16                 96.47       92.40           1       96.47395       92.40000
+coupon_caps_plf_agg_v 60000 - 12 - 16              3.06        2.97           1        3.06129        2.97000
+coupon_caps_mod_agg_v 60000 - 12 - 16             18.59       17.26           1       18.58747       17.26000
+create_Test_Data: 60000 - 12 - 18                 89.13       85.11           1       89.13081       85.11000
+coupon_caps_plf_agg_v 60000 - 12 - 18              3.03        2.96           1        3.03379        2.96000
+coupon_caps_mod_agg_v 60000 - 12 - 18             18.24       17.68           1       18.23887       17.68000
+create_Test_Data: 60000 - 12 - 20                 86.48       82.36           1       86.47568       82.36000
+coupon_caps_plf_agg_v 60000 - 12 - 20              2.99        2.88           1        2.98623        2.88000
+coupon_caps_mod_agg_v 60000 - 12 - 20             18.61       17.43           1       18.60783       17.43000
+create_Test_Data: 1000 - 12 - 22                   1.96        1.83           1        1.96046        1.83000
+Sum-coupon_caps_plf_agg_v                          3.52        3.41          16        0.21977        0.21313
+Sum-coupon_caps_mod_agg_v                         19.89       19.06          16        1.24283        1.19125
+coupon_caps_rsf_agg_v 1000 - 12 - 22              21.76       21.11           1       21.76294       21.11000
+create_Test_Data: 2000 - 12 - 22                   3.48        3.24           1        3.47518        3.24000
+coupon_caps_rsf_agg_v 2000 - 12 - 22              95.61       91.98           1       95.61487       91.98000
+create_Test_Data: 3000 - 12 - 22                   4.66        4.40           1        4.65938        4.40000
+coupon_caps_rsf_agg_v 3000 - 12 - 22             218.32      210.69           1      218.31631      210.69000
+create_Test_Data: 4000 - 12 - 22                   6.04        5.75           1        6.04096        5.75000
+coupon_caps_rsf_agg_v 4000 - 12 - 22             457.19      440.13           1      457.18571      440.13000
+create_Test_Data: 5000 - 12 - 22                   7.12        6.87           1        7.12086        6.87000
+coupon_caps_rsf_agg_v 5000 - 12 - 22             727.29      699.18           1      727.28775      699.18000
+create_Test_Data: 6000 - 12 - 22                   8.94        8.37           1        8.94135        8.37000
+coupon_caps_rsf_agg_v 6000 - 12 - 22            1060.90     1016.56           1     1060.89960     1016.56000
+XPLAN-coupon_caps_rsf_agg_v 6000 - 12 - 22      1089.91     1044.91           1     1089.91147     1044.91000
+create_Test_Data: 6000 - 2 - 22                    2.50        2.33           1        2.49641        2.33000
+coupon_caps_rsf_agg_v 6000 - 2 - 22              894.75      858.63           1      894.75050      858.63000
+create_Test_Data: 6000 - 4 - 22                    3.14        2.99           1        3.13811        2.99000
+coupon_caps_rsf_agg_v 6000 - 4 - 22              905.37      869.77           1      905.37012      869.77000
+create_Test_Data: 6000 - 6 - 22                    4.56        4.30           1        4.55579        4.30000
+coupon_caps_rsf_agg_v 6000 - 6 - 22             1016.75      977.10           1     1016.75028      977.10000
+create_Test_Data: 6000 - 8 - 22                    5.90        5.53           1        5.90119        5.53000
+coupon_caps_rsf_agg_v 6000 - 8 - 22             1058.88     1013.04           1     1058.87810     1013.04000
+create_Test_Data: 6000 - 10 - 22                   7.23        6.79           1        7.23443        6.79000
+coupon_caps_rsf_agg_v 6000 - 10 - 22            1040.56      998.56           1     1040.56192      998.56000
+create_Test_Data: 6000 - 12 - 12                  15.32       14.70           1       15.32401       14.70000
+coupon_caps_rsf_agg_v 6000 - 12 - 12             617.80      592.16           1      617.79660      592.16000
+create_Test_Data: 6000 - 12 - 14                  11.62       11.14           1       11.62394       11.14000
+coupon_caps_rsf_agg_v 6000 - 12 - 14             710.00      675.89           1      709.99786      675.89000
+create_Test_Data: 6000 - 12 - 16                  10.09        9.52           1       10.09044        9.52000
+coupon_caps_rsf_agg_v 6000 - 12 - 16             807.10      771.38           1      807.10036      771.38000
+create_Test_Data: 6000 - 12 - 18                   9.35        8.88           1        9.35233        8.88000
+coupon_caps_rsf_agg_v 6000 - 12 - 18             897.91      859.15           1      897.90511      859.15000
+create_Test_Data: 6000 - 12 - 20                   9.21        8.73           1        9.21104        8.73000
+coupon_caps_rsf_agg_v 6000 - 12 - 20             991.69      947.34           1      991.68777      947.34000
+(Other)                                            0.02        0.01           1        0.02358        0.01000
+-------------------------------------------  ----------  ----------  ----------  -------------  -------------
+Total                                          14050.49    13445.04         116      121.12492      115.90552
+-------------------------------------------  ----------  ----------  ----------  -------------  -------------
+[Timer timed (per call in ms): Elapsed: 0.03042, CPU: 0.02353]
+
+304 rows selected.
+
+SQL> @..\install_prereq\endspool
+
+End: 26-JUN-2025 03:46:36
+

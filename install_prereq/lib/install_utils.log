@@ -1,0 +1,84 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          29-JUN-2025 13:50:42 Version 23.4.0.24.05
+
+Table creation
+====================
+Create table log_lines
+
+Table dropped.
+
+
+Table created.
+
+Common type creation
+====================
+Create type L1_chr_arr
+
+Type created.
+
+Create type L1_num_arr
+
+Type created.
+
+
+Type dropped.
+
+
+Type created.
+
+
+Type created.
+
+Packages creation
+=================
+Create package Utils
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+Grant access to app (skip if none passed)
+
+PL/SQL procedure successfully completed.
+
+Granting Utils components to app..
+old   1: GRANT EXECUTE ON L1_chr_arr TO &app
+new   1: GRANT EXECUTE ON L1_chr_arr TO app
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON L1_num_arr TO &app
+new   1: GRANT EXECUTE ON L1_num_arr TO app
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON chr_int_rec TO &app
+new   1: GRANT EXECUTE ON chr_int_rec TO app
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON chr_int_arr TO &app
+new   1: GRANT EXECUTE ON chr_int_arr TO app
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON Utils to &app
+new   1: GRANT EXECUTE ON Utils to app
+
+Grant succeeded.
+
+old   1: GRANT ALL ON log_lines to &app
+new   1: GRANT ALL ON log_lines to app
+
+Grant succeeded.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 29-JUN-2025 13:50:42
+

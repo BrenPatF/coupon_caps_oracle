@@ -1,0 +1,8 @@
+Group,Field,Value1,Value2,Value3,Value4,Value5,Value6
+Coupon,Name,A,B,C,,,
+Coupon,Value,100,40,120,,,
+Cap,Name,Cap 1,Cap 2,Cap 3,,,
+Cap,Limit,150,70,20,,,
+Coupon Cap,Coupon,A,A,B,C,C,C
+Coupon Cap,Cap,Cap 1,Cap 2,Cap 2,Cap 3,Cap 2,Cap 1
+Coupon Cap,Sequence,1,2,1,1,2,3

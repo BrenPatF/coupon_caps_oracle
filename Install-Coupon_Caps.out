@@ -1,0 +1,27 @@
+
+Copy folder
+===========
+
+Copy folder = c:/input, existing = Y
+
+Files copied...
+===============
+
+File                                                       
+-----------------------------------------------------------
+.\unit_test\tt_coupon_caps.purely_wrap_coupon_caps_inp.json
+
+Sqlplus results
+===============
+
+subFolder           exeStr                                                             
+------------------  -------------------------------------------------------------------
+install_prereq      sqlplus sys/sys@orclpdb AS SYSDBA @drop_utils_users.sql lib app    
+install_prereq      sqlplus sys/sys@orclpdb AS SYSDBA @install_sys.sql lib app c:/input
+install_prereq\lib  sqlplus lib/lib@orclpdb @install_lib_all.sql app                   
+install_prereq\app  sqlplus app/app@orclpdb @c_syns_all.sql lib                        
+app                 sqlplus app/app@orclpdb @install_coupon_caps.sql                   
+app                 sqlplus app/app@orclpdb @install_coupon_caps_tt.sql                
+.                   sqlplus sys/sys@orclpdb AS SYSDBA @l_objects.sql sys               
+.                   sqlplus lib/lib@orclpdb @l_objects.sql lib                         
+.                   sqlplus app/app@orclpdb @l_objects.sql app                         

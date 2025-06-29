@@ -1,0 +1,38 @@
+
+Database             Time                 Version
+-------------------- -------------------- ------------------------------
+Start: FREE          28-JUN-2025 09:35:57 Version 23.4.0.24.05
+
+SQL_ID  dc0b8t0f1jwaf, child number 0
+-------------------------------------
+SELECT /*+ gather_plan_statistics GET_PLF_XPLAN */
+cou.coupon,          cou.value,          cap.cap_name,
+ccm.cap_sequence,          cap.cap_limit     FROM cap_data
+cap     JOIN coupon_cap_mapping ccm ON ccm.cap_name = cap.cap_name
+JOIN coupon_data        cou ON cou.coupon = ccm.coupon    ORDER BY
+cou.coupon, ccm.cap_sequence
+Plan hash value: 2403197186
+--------------------------------------------------------------------------------------------------------------------------------
+| Id  | Operation            | Name               | Starts | E-Rows | A-Rows |   A-Time   | Buffers |  OMem |  1Mem | Used-Mem |
+--------------------------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT     |                    |      1 |        |    720K|00:00:01.09 |    3022 |       |       |          |
+|   1 |  SORT ORDER BY       |                    |      1 |  72000 |    720K|00:00:01.09 |    3022 |    40M|  2253K|   35M (0)|
+|*  2 |   HASH JOIN          |                    |      1 |  72000 |    720K|00:00:00.14 |    3022 |  4656K|  2259K| 4679K (0)|
+|   3 |    TABLE ACCESS FULL | COUPON_DATA        |      1 |   6000 |  60000 |00:00:00.01 |     247 |       |       |          |
+|*  4 |    HASH JOIN         |                    |      1 |  72000 |    720K|00:00:00.08 |    2775 |  1744K|  1744K| 1435K (0)|
+|   5 |     TABLE ACCESS FULL| CAP_DATA           |      1 |     20 |     22 |00:00:00.01 |       6 |       |       |          |
+|   6 |     TABLE ACCESS FULL| COUPON_CAP_MAPPING |      1 |  72000 |    720K|00:00:00.04 |    2769 |       |       |          |
+--------------------------------------------------------------------------------------------------------------------------------
+Predicate Information (identified by operation id):
+---------------------------------------------------
+2 - access("COU"."COUPON"="CCM"."COUPON")
+4 - access("CCM"."CAP_NAME"="CAP"."CAP_NAME")
+Cursor returned 720000 rows
+
+PL/SQL procedure successfully completed.
+
+
+'END:'||TO_CHAR(SYSDATE,'DD-MON-YY
+----------------------------------
+End: 28-JUN-2025 09:37:15
+
