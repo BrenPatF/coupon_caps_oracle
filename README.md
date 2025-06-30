@@ -78,12 +78,10 @@ The following steps will download the repository into a folder, item_category_op
 
 ### Oracle Installs
 [&uarr; Installation](#installation)<br />
-[&darr; Automated Installation](#automated-installation)<br />
 
 The Oracle installation can be performed via a single PowerShell script, or in a series of smaller steps (with the script names contained in the PowerShell script).
 
 #### Automated Installation
-[&uarr; Oracle Installs](#oracle-installs)<br />
 
 The Oracle installation can be performed simply by running the following powershell script, `Install-Coupon_Caps.ps1`:
 
@@ -106,16 +104,18 @@ As noted in the Prerequisite Applications section, JavaScript is used to format 
 Both JavaScript and Powershell packages have their own GitHub projects:
 
 - [Trapit - JavaScript Unit Tester/Formatter](https://github.com/BrenPatF/trapit_nodejs_tester)
-- [Powershell utilities module](https://github.com/BrenPatF/powershell_utils)
+- [Powershell Utilities Module](https://github.com/BrenPatF/powershell_utils)
 
 However, for convenience the packages are included in the current project folder structure, rooted in the powershell_utils subfolder, and do not require separate installation.
 
 There are two main entry points in the Powershell module, listed below:
 
 - Format-JSON-Coupon_Caps.ps1<br />
+
 This is used to generate a template input JSON file for unit testing.
 
 - Test-Format-Coupon_Caps.ps1<br />
+
 This runs Oracle unit tests for a given test group ('coupon_caps' here), and includes the formatting step by means of a call to the JavaScript formatter. Further details are included in [Running the Unit Tests](#running-the-unit-tests) below.
 
 ## Running the Performance Testing
@@ -563,7 +563,10 @@ There are five subfolders below the trapit root folder:
 - [Coupons, Caps and Functions - Blog](https://brenpatf.github.io/2025/06/29/coupons_caps_functions.html)
 - [Solving a logical problem using analytical functions](https://asktom.oracle.com/ords/-asktom.search?tag=solving-a-logical-problem-using-analytical-functions)
 - [The Math Function Unit Testing Design Pattern](https://brenpatf.github.io/2023/06/05/the-math-function-unit-testing-design-pattern.html)
+- [Trapit - JavaScript Unit Tester/Formatter](https://github.com/BrenPatF/trapit_nodejs_tester)
+- [Powershell Utilities Module](https://github.com/BrenPatF/powershell_utils)
 - [Oracle Instant Client Downloads for Microsoft Windows (x64) 64-bit](https://www.oracle.com/ie/database/technologies/instant-client/winx64-64-downloads.html)
+- [Oracle Database Software Downloads](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html).
 - [Node.js Downloads](https://nodejs.org/en/download)
 - [Installing Windows PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/install/installing-windows-powershell)
 
